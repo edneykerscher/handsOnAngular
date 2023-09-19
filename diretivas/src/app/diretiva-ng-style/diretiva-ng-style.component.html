@@ -1,0 +1,7 @@
+<h2>Diretiva ngStyle</h2>
+Selecione uma cor de fundo
+<select [(ngModel)]="corDeFundo">
+  <option value="1">Azul</option>
+  <option value="2">Vermelho</option>
+</select>
+<h3 [ngStyle]="{'background-color': corDeFundo == 1 ? 'blue' : 'red'}">Hello World!</h3>

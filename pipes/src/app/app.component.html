@@ -1,0 +1,15 @@
+<h1>Pipe Padrão</h1>
+<h2>Data</h2>
+<p><strong>Sem pipe:</strong> {{ dataAtual }}</p>
+<p><strong>Com pipe:</strong> {{ dataAtual | date }}</p>
+<p><strong>Com pipe (formatada):</strong> {{ dataAtual | date:'dd/MM/yyyy' }}</p>
+<h2>Número</h2>
+<p><strong>Sem pipe:</strong> {{ valor }}</p>
+<p><strong>Com pipe (moeda):</strong> {{ valor | currency }}</p>
+<p><strong>Com pipe (decimal):</strong> {{ valor | number:'1.2-2' }}</p>
+<h2>Texto</h2>
+<p><strong>Sem pipe:</strong>{{ texto }}</p>
+<p><strong>Com pipe (maiusculo):</strong> {{ texto | uppercase }}</p>
+<p><strong>Com pipe (minisculo):</strong> {{ texto | lowercase }}</p>
+<p><strong>Com pipe (capitalizado):</strong> {{ texto | titlecase }}</p>
+

@@ -1,0 +1,4 @@
+<h2>Diretiva ngClass</h2>
+<p>Label Vermelho: <input type="checkbox" [(ngModel)]="labelVermelho"></p>
+<p>Label Sublinhado: <input type="checkbox" [(ngModel)]="labelSublinhado"></p>
+<label [ngClass]="{'destaque': labelVermelho, 'sublinhado': labelSublinhado}">Cidade: </label><input type="text">
