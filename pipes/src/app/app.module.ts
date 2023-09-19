@@ -5,12 +5,14 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PercentualPipe } from './percentual.pipe';
 
 registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PercentualPipe
   ],
   imports: [
     BrowserModule,
