@@ -6,10 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
-  dataAtual: Date = new Date();
-  valor: number = 1235.5;
-  texto: string = 'OI MUNdo!';
-  percentual: number = 26;
-
+  title = 'rotas';
 }
