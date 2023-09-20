@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-master',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MasterComponent implements OnInit {
 
-  constructor() { }
+  visualizaParametro: string = '';
+
+  constructor(private activatedRoute: ActivatedRoute) {
+    // const parametro = this.activatedRoute.snapshot.paramMap.get('parametro');
+    // if (parametro) {
+    //   this.visualizaParametro = parametro;
+    // }
+  }
 
   ngOnInit(): void {
   }
