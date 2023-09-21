@@ -11,10 +11,9 @@ export class MasterComponent implements OnInit {
   visualizaParametro: string = '';
 
   constructor(private activatedRoute: ActivatedRoute) {
-    // const parametro = this.activatedRoute.snapshot.paramMap.get('parametro');
-    // if (parametro) {
-    //   this.visualizaParametro = parametro;
-    // }
+    this.activatedRoute.params.subscribe(params => {
+      this.visualizaParametro = params['parametro'];
+    });
   }
 
   ngOnInit(): void {
